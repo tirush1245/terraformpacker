@@ -113,7 +113,7 @@ resource "aws_instance" "web-1" {
     ami = var.imagename
     #ami = "ami-0d857ff0f5fc4e03b"
     #ami = "${data.aws_ami.my_ami.id}"
-    availability_zone = "ap-south-1"
+#     availability_zone = "ap-south-1"
     instance_type = "t2.micro"
     key_name = "mumbaikey"
     subnet_id = "${aws_subnet.subnet1-public.id}"
