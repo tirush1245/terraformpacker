@@ -1,7 +1,7 @@
 #This Terraform Code Deploys Basic VPC Infra.
 provider "aws" {
-    access_key = "${var.aws_access_key}"
-    secret_key = "${var.aws_secret_key}"
+#     access_key = "${var.aws_access_key}"
+#     secret_key = "${var.aws_secret_key}"
     region = "${var.aws_region}"
 }
 
@@ -104,7 +104,7 @@ resource "aws_security_group" "allow_all" {
 
 data "aws_ami" "my_ami" {
      most_recent      = true
-     #name_regex       = "^mavrick"
+     #name_regex       = "Tiru"
      owners           = ["622574380882"]
 }
 
