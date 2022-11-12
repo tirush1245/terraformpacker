@@ -109,7 +109,7 @@ data "aws_ami" "my_ami" {
 }
 
 
-resource "aws_instance" "Server-1" {
+resource "aws_instance" "web-1" {
     ami = var.imagename
     #ami = "ami-0d857ff0f5fc4e03b"
     #ami = "${data.aws_ami.my_ami.id}"
