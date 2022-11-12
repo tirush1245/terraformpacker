@@ -9,15 +9,15 @@
         "access_key": "{{user `aws_access_key`}}",
         "secret_key": "{{user `aws_secret_key`}}",
         "type": "amazon-ebs",
-        "region": "us-east-1",
-        "source_ami": "ami-09d3b3274b6c5d4aa",
+        "region": "ap-south-1",
+        "source_ami": "ami-0e6329e222e662a52",
         "instance_type": "t2.micro",
         "ssh_username": "ec2-user",
-        "ami_name": "DevOpsClass-B18-Build-{{isotime | clean_resource_name}}",
-        "vpc_id": "vpc-0ae0b1acd235ee355",
-        "subnet_id": "subnet-0c5557c383559d6d2",
+        "ami_name": "Terraform-AMI-{{isotime | clean_resource_name}}",
+        "vpc_id": "vpc-0ff9b9694ca2b2a81",
+        "subnet_id": "subnet-04c093bc3b7400014",
         "tags": {
-          "Name": "DevOpsClass-B18-Build-{{isotime | clean_resource_name}}"
+          "Name": "Terraform-AMI-{{isotime | clean_resource_name}}"
         }
       }],
       "provisioners": [{
